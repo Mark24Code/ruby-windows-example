@@ -1,5 +1,7 @@
-Repo: https://github.com/Mark24Code/ruby-windows-example
-Author: Mark24Code
+# Ruby Game Example
+
+* Repo: https://github.com/Mark24Code/ruby-windows-example
+* Author: Mark24Code
 
 -- Guide -------------------------------------------
 
