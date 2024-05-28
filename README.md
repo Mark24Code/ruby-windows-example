@@ -3,7 +3,6 @@
 * Repo: https://github.com/Mark24Code/ruby-windows-example
 * Author: Mark24Code
 
--- Guide -------------------------------------------
 
 # 0.下载 Ruby
 
@@ -20,23 +19,33 @@
 
 1）注意勾选 添加到 PATH
 
-2） 组件勾选，可以不勾选 rdoc， toolchain
+2）组件勾选，可以不勾选 rdoc
 
-3）最后一步勾选 MSYS
+3）安装 MSYS toolchain
 
-会启动安装。先择 [1] basic
+4）最后完成的时候，会有检查 MSYS
 
-![msys](https://github.com/Mark24Code/rime-auto-deploy/blob/main/images/windows/01-install-ruby/step6-dev-chain.png)
+这步比较冗长，依赖网络。建议全局翻墙
 
-可能需要等很久。
+这部可以就让他进行。可以继续下面的步骤。安装图形依赖。
 
-如果中断。也可以下载
-
-https://repo.msys2.org/distrib/x86_64/msys2-x86_64-20221028.exe
-
-直接手动安装，安装位置可以在  C:\Ruby33-x64\msys64
-
-
+```
+gpg: 目录‘/etc/pacman.d/gnupg/openpgp-revocs.d’已创建
+gpg: 吊销证书已被存储为‘/etc/pacman.d/gnupg/openpgp-revocs.d/ECFA82DDA6851F6A6C528ED53887AB2F60148761.rev’
+gpg: Done
+==> 正在更新可信数据库...
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: 深度：0  有效性：  1  已签名：  0  信任度：0-，0q，0n，0m，0f，1u
+==> 正在从 msys2.gpg 添加密钥...
+==> 正在本地签名密钥环中的可信密钥...
+  -> 已本地签名 5 把密钥。
+==> 正在导入拥有者信任值...
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+gpg: setting ownertrust to 4
+```
 
 # 2.安装图形依赖库
 
@@ -57,3 +66,5 @@ https://repo.msys2.org/distrib/x86_64/msys2-x86_64-20221028.exe
 C:\Ruby33-x64\unins000.exe
 
 删除 C:\Ruby33-x64\msys64
+
+注：msys64 可能被占用，无法删除，系统重启后可以删除。
