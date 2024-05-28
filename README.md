@@ -26,6 +26,8 @@
 
 会启动安装。先择 [1] basic
 
+![msys](https://github.com/Mark24Code/rime-auto-deploy/blob/main/images/windows/01-install-ruby/step6-dev-chain.png)
+
 可能需要等很久。
 
 如果中断。也可以下载
